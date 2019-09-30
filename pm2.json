@@ -1,0 +1,15 @@
+{
+  "apps": [{
+    "name": "ws-manager",
+    "script": "production.js",
+    "cwd": "D:\dev\node\ws-manager",
+    "exec_mode": "fork",
+    "max_memory_restart": "1G",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "env": {
+      
+    }
+  }]
+}
