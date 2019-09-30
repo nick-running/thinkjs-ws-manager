@@ -1,10 +1,14 @@
 const Base = require('./base.js');
 
+/**
+ * this.websocket._ultron.id为Websocket通道id，可用于频道管理模式
+ * 自定义Action接收的数据格式是JSON序列化的格式（think-websocket-ws内部接收机制，只接受这种消息）
+ * @type {module.exports}
+ */
 module.exports = class extends Base {
   constructor(...arg) {
     super(...arg);
   }
-  // this.websocket._ultron.id为Websocket通道id，可用于频道管理模式
   
   openAction() {
     console.log('ws open');
@@ -18,11 +22,16 @@ module.exports = class extends Base {
     // console.log(this.wsData);
     return this.success();
   }
+  
+  /**
+   * 心跳机制（可去除接收客户端ping，响应pong）
+   * @returns {any | never}
+   */
   pingAction() {
     console.log('ws pingAction');
     console.log('this.wsData is: ', JSON.stringify(this.wsData))
     // console.log('ping this.websocket is: ', this.websocket)
-    this.emit('pong', 'pong pong');
+    this.emit('pong', 'pong');
     // console.log(this.wsData);
     return this.success();
   }
