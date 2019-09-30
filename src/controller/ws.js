@@ -1,7 +1,7 @@
 const Base = require('./base.js');
 
 /**
- * this.websocket._ultron.id为Websocket通道id，可用于频道管理模式
+ * this.websocket._ultron.id为Websocket通道id，可用于频道管理模式（如点对点通讯）
  * 自定义Action接收的数据格式是JSON序列化的格式（think-websocket-ws内部接收机制，只接受这种消息）
  * @type {module.exports}
  */
