@@ -1,5 +1,5 @@
 {
-  "name": "ws-manager",
+  "name": "thinkjs-ws-manager",
   "description": "application created by thinkjs",
   "version": "1.0.0",
   "author": "nick <tjtj54tj@163.com>",
@@ -44,12 +44,12 @@
   "readmeFilename": "README.md",
   "thinkjs": {
     "metadata": {
-      "name": "ws-manager",
+      "name": "thinkjs-ws-manager",
       "description": "application created by thinkjs",
       "author": "nick <tjtj54tj@163.com>",
       "babel": true
     },
-    "projectName": "ws-manager",
+    "projectName": "thinkjs-ws-manager",
     "template": "C:\\Users\\nick\\AppData\\Roaming\\npm\\node_modules\\think-cli\\default_template",
     "clone": false,
     "isMultiModule": false

@@ -1,22 +1,20 @@
 
-Application created by [ThinkJS](http://www.thinkjs.org)
+Application created by [ThinkJS](http://www.thinkjs.org), [think-websocket-ws](https://github.com/thinkjs/think-websocket-ws)
 
-## Install dependencies
+## 安装依赖
 
 ```
 npm install
 ```
-
-## Start server
-
+## 项目 WebSocket基本配置
+WebSocket 是以 extend 的形式集成到 ThinkJS 的，首先要配置 src/config/extend.js:
 ```
-npm start
-```
+const websocket = require('think-websocket');
 
-## Deploy with pm2
-
-Use pm2 to deploy app on production enviroment.
-
+module.exports = [
+  // ...
+  websocket(think.app),
+];
 ```
-pm2 startOrReload pm2.json
-```
+## WebSocket其它配置
+参考[think-websocket-ws](https://github.com/thinkjs/think-websocket-ws)的配置

@@ -1,8 +1,8 @@
 {
   "apps": [{
-    "name": "ws-manager",
+    "name": "thinkjs-ws-manager",
     "script": "production.js",
-    "cwd": "D:\dev\node\ws-manager",
+    "cwd": "D:\dev\node\thinkjs-ws-manager",
     "exec_mode": "fork",
     "max_memory_restart": "1G",
     "autorestart": true,
